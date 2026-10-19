@@ -1,0 +1,19 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.venv/
+venv/
+__pycache__/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+*.log

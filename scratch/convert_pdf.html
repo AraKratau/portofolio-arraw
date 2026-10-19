@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF to Thumbnail Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #111; color: #fff; padding: 20px; }
+        .canvas-card { margin-bottom: 30px; display: inline-block; background: #222; padding: 10px; border-radius: 8px; }
+        canvas { display: block; max-width: 600px; height: auto; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Converting PDFs & Saving to assets/images...</h1>
+    <div id="status">Loading PDF.js...</div>
+
+    <div class="canvas-card"><h3>1. Poster Literasi Fest</h3><canvas id="canvas-1"></canvas></div>
+    <div class="canvas-card"><h3>2. Pelepasan Siswa Tadika Puri</h3><canvas id="canvas-2"></canvas></div>
+    <div class="canvas-card"><h3>3. Kartu Nama Budi Arkaraya</h3><canvas id="canvas-3"></canvas></div>
+    <div class="canvas-card"><h3>4. Design Brief Literasi Fest</h3><canvas id="canvas-4"></canvas></div>
+    <div class="canvas-card"><h3>5. Nota Pembayaran</h3><canvas id="canvas-5"></canvas></div>
+
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        const pdfList = [
+            { id: 'canvas-1', url: '../assets/Project/Desain%20grafis/Poster%20(Revisi).pdf', filename: 'thumb-poster-literasi.jpg' },
+            { id: 'canvas-2', url: '../assets/Project/Desain%20grafis/Pelepasan%20dan%20perpisahan%20siswasiswi%20kelas%20Vi%20(1).pdf', filename: 'thumb-pelepasan-siswa.jpg' },
+            { id: 'canvas-3', url: '../assets/Project/Desain%20grafis/kartu%20nama%20papah1.pdf', filename: 'thumb-kartu-nama.jpg' },
+            { id: 'canvas-4', url: '../assets/Project/Desain%20grafis/Design%20Brief%20Liiterasi%20Fest.pdf', filename: 'thumb-design-brief.jpg' },
+            { id: 'canvas-5', url: '../assets/Project/Desain%20grafis/Ungu%20and%20Putih%20Nota%20Pembayaran%20Document%20A4%20(1).pdf', filename: 'thumb-nota-pembayaran.jpg' }
+        ];
+
+        async function renderAndSendAll() {
+            const status = document.getElementById('status');
+            for (let i = 0; i < pdfList.length; i++) {
+                const item = pdfList[i];
+                status.textContent = `Rendering ${i+1}/${pdfList.length}: ${item.filename}...`;
+                try {
+                    const loadingTask = pdfjsLib.getDocument(item.url);
+                    const pdf = await loadingTask.promise;
+                    const page = await pdf.getPage(1);
+                    
+                    const canvas = document.getElementById(item.id);
+                    const context = canvas.getContext('2d');
+                    
+                    const scale = 2.0;
+                    const viewport = page.getViewport({ scale });
+                    
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    
+                    await page.render({ canvasContext: context, viewport: viewport }).promise;
+
+                    // Convert to base64 JPEG
+                    const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
+                    const base64 = dataUrl.split(',')[1];
+
+                    // Send to server
+                    status.textContent = `Saving ${item.filename} to server...`;
+                    await fetch('http://localhost:3333/save', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ filename: item.filename, base64 })
+                    });
+                } catch (e) {
+                    console.error('Error with ' + item.filename, e);
+                }
+            }
+            status.textContent = 'ALL 5 SAVED TO ASSETS/IMAGES!';
+            document.body.setAttribute('data-saved-all', 'true');
+        }
+
+        renderAndSendAll();
+    </script>
+</body>
+</html>

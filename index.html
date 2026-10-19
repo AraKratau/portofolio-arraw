@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zahrah Setia Rafaeyfa Assyla — Creative Designer & Developer. Explore my cosmic portfolio of design, motion, web, and creative technology projects.">
+    <meta name="keywords"
+        content="Zahrah, portfolio, creative, designer, developer, UI/UX, motion graphics, web development">
+    <meta name="author" content="Zahrah Setia Rafaeyfa Assyla">
+    <title>Arraw Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== STARS CANVAS ===== -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Arraw</span>
+                <span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About Me</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                <li class="mobile-cv-item"><a href="assets/cv/CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf" class="nav-link nav-link-cv" download="CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf">Download CV</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="assets/cv/CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf" class="btn-nav-cv" id="nav-btn-cv" download="CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf" aria-label="Download CV">
+                    <span class="btn-nav-cv-icon">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                    </span>
+                    <span class="btn-nav-cv-text" data-text-full="Download CV" data-text-short="CV">Download CV</span>
+                </a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-nebula"></div>
+            <div class="hero-orbital hero-orbital-1"></div>
+            <div class="hero-orbital hero-orbital-2"></div>
+            <div class="hero-orbital hero-orbital-3"></div>
+            <div class="hero-planet hero-planet-1"></div>
+            <div class="hero-planet hero-planet-2"></div>
+            <div class="hero-planet hero-planet-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-title-wrapper" data-animate="fade-up">
+                <h1 class="hero-title" aria-label="PORTFOLIO">
+                    <span class="port-letters">
+                        <span class="char-box" data-char="P">
+                            <span class="char-text">P</span>
+                            <span class="corner-dot dot-tl"></span>
+                            <span class="corner-dot dot-tr"></span>
+                            <span class="corner-dot dot-bl"></span>
+                            <span class="corner-dot dot-br"></span>
+                            <span class="corner-dot dot-tc"></span>
+                            <span class="corner-dot dot-bc"></span>
+                            <span class="corner-dot dot-lc"></span>
+                            <span class="corner-dot dot-rc"></span>
+                        </span>
+                        <span class="char-box" data-char="O">
+                            <span class="char-text">O</span>
+                            <span class="corner-dot dot-tl"></span>
+                            <span class="corner-dot dot-tr"></span>
+                            <span class="corner-dot dot-bl"></span>
+                            <span class="corner-dot dot-br"></span>
+                            <span class="corner-dot dot-tc"></span>
+                            <span class="corner-dot dot-bc"></span>
+                            <span class="corner-dot dot-lc"></span>
+                            <span class="corner-dot dot-rc"></span>
+                        </span>
+                        <span class="char-box" data-char="R">
+                            <span class="char-text">R</span>
+                            <span class="corner-dot dot-tl"></span>
+                            <span class="corner-dot dot-tr"></span>
+                            <span class="corner-dot dot-bl"></span>
+                            <span class="corner-dot dot-br"></span>
+                            <span class="corner-dot dot-tc"></span>
+                            <span class="corner-dot dot-bc"></span>
+                            <span class="corner-dot dot-lc"></span>
+                            <span class="corner-dot dot-rc"></span>
+                        </span>
+                        <span class="char-box" data-char="T">
+                            <span class="char-text">T</span>
+                            <span class="corner-dot dot-tl"></span>
+                            <span class="corner-dot dot-tr"></span>
+                            <span class="corner-dot dot-bl"></span>
+                            <span class="corner-dot dot-br"></span>
+                            <span class="corner-dot dot-tc"></span>
+                            <span class="corner-dot dot-bc"></span>
+                            <span class="corner-dot dot-lc"></span>
+                            <span class="corner-dot dot-rc"></span>
+                        </span>
+                    </span>
+                    <span class="folio-box" id="hero-folio-box">
+                        <span class="folio-text" id="folio-typewriter">Folio</span>
+                        <span class="folio-cursor">|</span>
+                        <span class="corner-dot dot-tl"></span>
+                        <span class="corner-dot dot-tr"></span>
+                        <span class="corner-dot dot-bl"></span>
+                        <span class="corner-dot dot-br"></span>
+                        <span class="corner-dot dot-tc"></span>
+                        <span class="corner-dot dot-bc"></span>
+                        <span class="corner-dot dot-lc"></span>
+                        <span class="corner-dot dot-rc"></span>
+                    </span>
+                </h1>
+                <div class="hero-title-glow"></div>
+            </div>
+
+            <div class="hero-info" data-animate="fade-up" data-delay="200">
+                <p class="hero-tagline">Frontend Developer &bull; Graphic Designer</p>
+            </div>
+
+            <div class="hero-cta" data-animate="fade-up" data-delay="400">
+                <a href="#contact" class="btn btn-primary magnetic-btn" id="btn-hire">
+                    <span>HIRE ME</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                </a>
+                <a href="assets/cv/CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf" class="btn btn-secondary magnetic-btn" id="btn-cv" download="CV-Zahrah-Setia-Rafaeyfa-Assyla.pdf">
+                    <span>DOWNLOAD CV</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="600">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">ABOUT ME</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-portrait" data-animate="fade-right">
+                    <div class="portrait-frame">
+                        <img src="assets/images/profile.jpg" alt="Zahrah Setia Rafaeyfa Assyla" class="portrait-img"
+                            loading="lazy">
+                        <div class="portrait-glow"></div>
+                        <div class="portrait-ring portrait-ring-1"></div>
+                        <div class="portrait-ring portrait-ring-2"></div>
+                    </div>
+                </div>
+
+                <div class="about-content" data-animate="fade-left">
+                    <h3 class="about-fullname">Zahrah Setia Rafaeyfa Assyla</h3>
+                    <p class="about-subtitle">Frontend Developer &bull; Graphic Designer</p>
+                    <p class="about-intro">
+                        Hi, I'm <strong>Zahrah Setia Rafaeyfa Assyla</strong> — a passionate creative & a fresh
+                        graduate from
+                        <strong>SMKN 10 Jakarta</strong> with a strong interest in graphic design, digital experiences,
+                        and modern frontend technology.
+                        <br>
+                        I also completed a <strong>Graphic Design training</strong>, where I explored various creative fields
+                        including graphic design, video editing, and motion graphics. This experience allowed me to
+                        develop my visual skills combining creativity with technology.
+                    </p>
+                    <p class="about-description">
+                       “Where creativity meets technology, ideas become experiences.”
+                    </p>
+
+                    <div class="about-interests">
+                        <div class="interests-header-row">
+                            <h3 class="interests-title">What I Do</h3>
+                            <span class="interests-action-tip">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="16" x2="12" y2="12"/>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                                </svg>
+                                Klik untuk lihat tools
+                            </span>
+                        </div>
+                        <div class="interest-tags">
+                            <button class="interest-tag active" data-category="graphic-design" type="button" data-animate="scale-in" data-delay="100">
+                                <div class="tag-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                        <polyline points="2 17 12 22 22 17" />
+                                        <polyline points="2 12 12 17 22 12" />
+                                    </svg>
+                                </div>
+                                <div class="tag-info">
+                                    <span class="tag-title">Graphic Design</span>
+                                    <span class="tag-badge">4 Tools</span>
+                                </div>
+                                <span class="tag-dot"></span>
+                            </button>
+
+                            <button class="interest-tag" data-category="web-development" type="button" data-animate="scale-in" data-delay="200">
+                                <div class="tag-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                    </svg>
+                                </div>
+                                <div class="tag-info">
+                                    <span class="tag-title">Web Development</span>
+                                    <span class="tag-badge">6 Tools</span>
+                                </div>
+                                <span class="tag-dot"></span>
+                            </button>
+
+                            <button class="interest-tag" data-category="video-editor" type="button" data-animate="scale-in" data-delay="300">
+                                <div class="tag-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="23 7 16 12 23 17 23 7" />
+                                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                                    </svg>
+                                </div>
+                                <div class="tag-info">
+                                    <span class="tag-title">Video Editor</span>
+                                    <span class="tag-badge">3 Tools</span>
+                                </div>
+                                <span class="tag-dot"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== WHAT I DO TOOLS SHOWCASE (MARQUEE) ===== -->
+            <div class="about-tools-showcase active" id="about-tools-showcase" data-animate="fade-up">
+                <div class="tools-marquee-container">
+                    <div class="tools-marquee-fade tools-marquee-fade-left"></div>
+                    <div class="tools-marquee-fade tools-marquee-fade-right"></div>
+                    <div class="tools-marquee-track" id="tools-marquee-track">
+                        <!-- Populated and dynamically animated via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">SELECTED PROJECTS</h2>
+                <p class="section-subtitle">Exploring different dimensions of creativity</p>
+            </div>
+
+            <!-- Main Filter Tabs -->
+            <div class="project-main-tabs" data-animate="fade-up" data-delay="100">
+                <button class="main-tab-btn active" id="tab-project" data-tab="project">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                    <span>Project</span>
+                </button>
+                <button class="main-tab-btn" id="tab-certificate" data-tab="certificate">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                    </svg>
+                    <span>Sertifikat</span>
+                </button>
+            </div>
+
+            <!-- Sub-Category Pills (shown only when Project tab is active) -->
+            <div class="project-sub-filters" id="project-sub-filters" data-animate="fade-up" data-delay="200">
+                <button class="sub-filter-btn active" data-sub-filter="all-projects">All</button>
+                <button class="sub-filter-btn" data-sub-filter="design">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/>
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+                    </svg>
+                    Graphic Design
+                </button>
+                <button class="sub-filter-btn" data-sub-filter="web">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    Web Development
+                </button>
+                <button class="sub-filter-btn" data-sub-filter="video">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                    </svg>
+                    Video Editing
+                </button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- WEB DEVELOPMENT (COMING SOON) -->
+                <div class="project-card coming-soon-card" data-category="project" data-sub="web" data-exclude-all="true" data-animate="fade-up" data-delay="100">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-badge">
+                            <span class="pulsing-beacon"></span>
+                            <span>COMING SOON</span>
+                        </div>
+                        <div class="coming-soon-icon-wrap">
+                            <div class="coming-soon-orbital"></div>
+                            <svg class="coming-soon-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                                <line x1="14" y1="4" x2="10" y2="20" stroke-opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="coming-soon-title">Web Development Projects</h3>
+                        <p class="coming-soon-desc">
+                            Proyek web development sedang dalam proses kurasi & pengembangan. Segera hadir karya website interaktif, modern, dan responsif!
+                        </p>
+                        <div class="coming-soon-tags">
+                            <span>HTML &bull; CSS &bull; JS</span>
+                            <span>React</span>
+                            <span>Responsive Design</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESAIN GRAFIS 1: POSTER LITERASI FEST 2026 -->
+                <div class="project-card design-pdf-card" data-category="project" data-sub="design" data-animate="fade-up" data-delay="100">
+                    <div class="project-preview design-preview">
+                        <img src="assets/images/thumb-poster-literasi.jpg" alt="Poster Literasi Fest 2026" loading="lazy">
+                        <div class="design-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <span>POSTER EVENT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Poster%20(Revisi).pdf"
+                                data-title="Poster Literasi Fest 2026"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat Desain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category design-cat-text">GRAPHIC DESIGN &bull; POSTER</span>
+                        <h3 class="project-title">Poster Literasi Fest 2026</h3>
+                        <p class="project-desc">Desain poster promosi event festival literasi nasional di JIEXPO Kemayoran dengan tipografi modern, tata letak dinamis, dan palet warna festival yang atraktif.</p>
+                        <div class="design-card-footer">
+                            <div class="project-tools">
+                                <span>Illustrator</span>
+                                <span>Photoshop</span>
+                                <span>CMYK Print</span>
+                            </div>
+                            <button class="design-inline-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Poster%20(Revisi).pdf"
+                                data-title="Poster Literasi Fest 2026"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <span>Lihat PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESAIN GRAFIS 2: PELEPASAN SISWA SD TADIKA PURI -->
+                <div class="project-card design-pdf-card" data-category="project" data-sub="design" data-animate="fade-up" data-delay="200">
+                    <div class="project-preview design-preview">
+                        <img src="assets/images/thumb-pelepasan-siswa.jpg" alt="Backdrop Pelepasan Siswa SD Tadika Puri" loading="lazy">
+                        <div class="design-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <span>BANNER & BACKDROP</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Pelepasan%20dan%20perpisahan%20siswasiswi%20kelas%20Vi%20(1).pdf"
+                                data-title="Backdrop Pelepasan Siswa SD Tadika Puri"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat Desain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category design-cat-text">GRAPHIC DESIGN &bull; BANNER</span>
+                        <h3 class="project-title">Backdrop Pelepasan Siswa SD Tadika Puri</h3>
+                        <p class="project-desc">Desain panggung wisuda dan backdrop pelepasan siswa/i kelas VI SD Tadika Puri bertema megah tirai panggung merah, aksen wayang emas, dan ilustrasi wisudawan ceria.</p>
+                        <div class="design-card-footer">
+                            <div class="project-tools">
+                                <span>Illustrator</span>
+                                <span>Photoshop</span>
+                                <span>Large Format</span>
+                            </div>
+                            <button class="design-inline-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Pelepasan%20dan%20perpisahan%20siswasiswi%20kelas%20Vi%20(1).pdf"
+                                data-title="Backdrop Pelepasan Siswa SD Tadika Puri"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <span>Lihat PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESAIN GRAFIS 3: KARTU NAMA BUDI ARKARAYA -->
+                <div class="project-card design-pdf-card" data-category="project" data-sub="design" data-animate="fade-up" data-delay="300">
+                    <div class="project-preview design-preview">
+                        <img src="assets/images/thumb-kartu-nama.jpg" alt="Kartu Nama Budi Arkaraya Audio" loading="lazy">
+                        <div class="design-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <span>KARTU NAMA</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/kartu%20nama%20papah1.pdf"
+                                data-title="Kartu Nama Budi Arkaraya Audio"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat Desain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category design-cat-text">GRAPHIC DESIGN &bull; BRAND IDENTITY</span>
+                        <h3 class="project-title">Kartu Nama Budi Arkaraya Audio</h3>
+                        <p class="project-desc">Desain kartu nama bisnis spesialis audio mobil & aksesoris kendaraan dengan logo emblem vektor modern, hierarki informasi kontak presisi, dan garis potong cetak.</p>
+                        <div class="design-card-footer">
+                            <div class="project-tools">
+                                <span>Illustrator</span>
+                                <span>Vector Art</span>
+                                <span>Print Design</span>
+                            </div>
+                            <button class="design-inline-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/kartu%20nama%20papah1.pdf"
+                                data-title="Kartu Nama Budi Arkaraya Audio"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <span>Lihat PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESAIN GRAFIS 4: DESIGN BRIEF LITERASI FEST 2026 -->
+                <div class="project-card design-pdf-card" data-category="project" data-sub="design" data-animate="fade-up" data-delay="400">
+                    <div class="project-preview design-preview">
+                        <img src="assets/images/thumb-design-brief.jpg" alt="Design Brief Literasi Fest 2026" loading="lazy">
+                        <div class="design-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <span>DESIGN BRIEF</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Design%20Brief%20Liiterasi%20Fest.pdf"
+                                data-title="Design Brief Literasi Fest 2026"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat Desain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category design-cat-text">CREATIVE STRATEGY &bull; CONCEPT BRIEF</span>
+                        <h3 class="project-title">Design Brief Literasi Fest 2026</h3>
+                        <p class="project-desc">Dokumen perencanaan konseptual identitas visual festival literasi untuk klien NEXPO. Berisi analisis audiens sasaran, standar teknis A4 art paper, dan core message.</p>
+                        <div class="design-card-footer">
+                            <div class="project-tools">
+                                <span>Design Brief</span>
+                                <span>Strategy</span>
+                                <span>Documentation</span>
+                            </div>
+                            <button class="design-inline-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Design%20Brief%20Liiterasi%20Fest.pdf"
+                                data-title="Design Brief Literasi Fest 2026"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <span>Lihat PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESAIN GRAFIS 5: NOTA PEMBAYARAN BUDI ARKARAYA -->
+                <div class="project-card design-pdf-card" data-category="project" data-sub="design" data-animate="fade-up" data-delay="500">
+                    <div class="project-preview design-preview">
+                        <img src="assets/images/thumb-nota-pembayaran.jpg" alt="Nota Pembayaran Budi Arkaraya" loading="lazy">
+                        <div class="design-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <span>FORM & INVOICE</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Ungu%20and%20Putih%20Nota%20Pembayaran%20Document%20A4%20(1).pdf"
+                                data-title="Nota Pembayaran Budi Arkaraya"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat Desain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category design-cat-text">STATIONERY &bull; INVOICE DESIGN</span>
+                        <h3 class="project-title">Nota Pembayaran Budi Arkaraya</h3>
+                        <p class="project-desc">Desain lembar invoice transaksi resmi ukuran A4 dengan watermark logo otomotif, penataan tabel item rapi, dan format profesional untuk operasional bisnis.</p>
+                        <div class="design-card-footer">
+                            <div class="project-tools">
+                                <span>Illustrator</span>
+                                <span>InDesign</span>
+                                <span>Stationery</span>
+                            </div>
+                            <button class="design-inline-btn btn-open-pdf"
+                                data-pdf="assets/Project/Desain%20grafis/Ungu%20and%20Putih%20Nota%20Pembayaran%20Document%20A4%20(1).pdf"
+                                data-title="Nota Pembayaran Budi Arkaraya"
+                                data-issuer="Desain Grafis • Zahrah Assyla">
+                                <span>Lihat PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO EDITING PROJECT 1: SHORT MOVIE COFFEE DREAM -->
+                <div class="project-card video-card" data-category="project" data-sub="video" data-animate="fade-up" data-delay="100"
+                    data-video="assets/Project/Video Editor/SHORT MOVIE COFFEE DREAM.mov"
+                    data-title="Short Movie: Coffee Dream"
+                    data-category-label="SHORT MOVIE & EDITING"
+                    data-desc="Short Film buatan kelompok 2 saya berperan sebagai salah satu talent di dalam video dan saya yang membantu pengeditan terutama dalam opening dan closing video ini"
+                    data-tools="Premiere Pro,Cinematic Flow,Audio Mixing"
+                    data-poster="assets/images/thumb-coffee-dream.jpg">
+                    <div class="project-preview video-preview">
+                        <img src="assets/images/thumb-coffee-dream.jpg" alt="Short Movie: Coffee Dream" loading="lazy">
+                        <div class="video-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>SHORT MOVIE</span>
+                        </div>
+                        <div class="video-play-center-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category video-cat-text">SHORT MOVIE &bull; VIDEO EDITING</span>
+                        <h3 class="project-title">Short Movie: Coffee Dream</h3>
+                        <p class="project-desc">Dalam proyek short film ini, saya berperan sebagai salah satu talent yang terlibat dalam proses pembuatan video. Selain itu, saya turut berkontribusi dalam proses editing, khususnya pada bagian opening dan closing, untuk menciptakan tampilan video yang menarik serta memberikan kesan yang kuat bagi penonton.</p>
+                        <div class="video-card-footer">
+                            <div class="project-tools">
+                                <span>Premiere Pro</span>
+                                <span>Audio Mixing</span>
+                            </div>
+                            <button class="video-inline-btn btn-open-video"
+                                data-video="assets/Project/Video Editor/SHORT MOVIE COFFEE DREAM.mov"
+                                data-title="Short Movie: Coffee Dream"
+                                data-category-label="SHORT MOVIE & EDITING"
+                                data-desc="Film pendek sinematik yang mengangkat dinamika perjuangan mimpi dan kreativitas di ruang pelatihan PPKD Jakarta Timur. Menghadirkan penceritaan visual yang ekspresif dengan color grading atmosferik, alur sinematik terarah, dan tata suara audio yang selaras."
+                                data-tools="Premiere Pro,DaVinci Resolve,Cinematic Flow,Audio Mixing"
+                                data-poster="assets/images/thumb-coffee-dream.jpg">
+                                <span>Tonton Video</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO EDITING PROJECT 2: MOTOR LISTRIK (MOLIS) -->
+                <div class="project-card video-card" data-category="project" data-sub="video" data-animate="fade-up" data-delay="200"
+                    data-video="assets/Project/Video Editor/molisss.mp4"
+                    data-title="Motor Listrik (MOLIS) Cinematic Showcase"
+                    data-category-label="COMMERCIAL & SHOWCASE"
+                    data-desc="Video commercial reel dan dokumentasi sinematik motor listrik U-Winfly di PPKD Jakarta Timur. Menonjolkan keunggulan instrumen futuristik, detail komponen, dan mobilitas ramah lingkungan melalui beat-synced editing dan transisi kamera yang dinamis."
+                    data-tools="Premiere Pro,After Effects,Speed Ramping,Sound Design"
+                    data-poster="assets/images/thumb-molisss.jpg">
+                    <div class="project-preview video-preview">
+                        <img src="assets/images/thumb-molisss.jpg" alt="Motor Listrik (MOLIS) Cinematic Showcase" loading="lazy">
+                        <div class="video-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>SHOWCASE</span>
+                        </div>
+                        <div class="video-play-center-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category video-cat-text">COMMERCIAL &bull; VIDEO EDITING</span>
+                        <h3 class="project-title">Motor Listrik (MOLIS) Showcase</h3>
+                        <p class="project-desc">Video commercial dan dokumentasi sinematik seputar kendaraan motor listrik modern dengan ritme editing dinamis.</p>
+                        <div class="video-card-footer">
+                            <div class="project-tools">
+                                <span>Premiere Pro</span>
+                                <span>After Effects</span>
+                                <span>Speed Ramping</span>
+                            </div>
+                            <button class="video-inline-btn btn-open-video"
+                                data-video="assets/Project/Video Editor/molisss.mp4"
+                                data-title="Motor Listrik (MOLIS) Cinematic Showcase"
+                                data-category-label="COMMERCIAL & SHOWCASE"
+                                data-desc="Video commercial reel dan dokumentasi sinematik motor listrik U-Winfly di PPKD Jakarta Timur. Menonjolkan keunggulan instrumen futuristik, detail komponen, dan mobilitas ramah lingkungan melalui beat-synced editing dan transisi kamera yang dinamis."
+                                data-tools="Premiere Pro,After Effects,Speed Ramping,Sound Design"
+                                data-poster="assets/images/thumb-molisss.jpg">
+                                <span>Tonton Video</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO EDITING PROJECT 3: OTOMOTIF -->
+                <div class="project-card video-card" data-category="project" data-sub="video" data-animate="fade-up" data-delay="300"
+                    data-video="assets/Project/Video Editor/otomotif.mp4"
+                    data-title="Otomotif Cinematic Reel"
+                    data-category-label="AUTOMOTIVE & HIGHLIGHT"
+                    data-desc="Video teaser berkonsep widescreen sinematik yang merekam aksi dan keahlian di bidang teknik otomotif PPKD Jakarta Timur. Menggunakan visual grade kontras tinggi, motion typography intro modern, dan pacing editing energik."
+                    data-tools="Premiere Pro,After Effects,Color Grading,Cinematic Cut"
+                    data-poster="assets/images/thumb-otomotif.jpg">
+                    <div class="project-preview video-preview">
+                        <img src="assets/images/thumb-otomotif.jpg" alt="Otomotif Cinematic Reel" loading="lazy">
+                        <div class="video-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>AUTOMOTIVE</span>
+                        </div>
+                        <div class="video-play-center-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category video-cat-text">AUTOMOTIVE &bull; VIDEO EDITING</span>
+                        <h3 class="project-title">Otomotif Cinematic Reel</h3>
+                        <p class="project-desc">Video teaser sinematik kejuruan otomotif dengan rasio widescreen, tipografi modern, dan grading visual tajam.</p>
+                        <div class="video-card-footer">
+                            <div class="project-tools">
+                                <span>Premiere Pro</span>
+                                <span>After Effects</span>
+                                <span>Color Grading</span>
+                            </div>
+                            <button class="video-inline-btn btn-open-video"
+                                data-video="assets/Project/Video Editor/otomotif.mp4"
+                                data-title="Otomotif Cinematic Reel"
+                                data-category-label="AUTOMOTIVE & HIGHLIGHT"
+                                data-desc="Video teaser berkonsep widescreen sinematik yang merekam aksi dan keahlian di bidang teknik otomotif PPKD Jakarta Timur. Menggunakan visual grade kontras tinggi, motion typography intro modern, dan pacing editing energik."
+                                data-tools="Premiere Pro,After Effects,Color Grading,Cinematic Cut"
+                                data-poster="assets/images/thumb-otomotif.jpg">
+                                <span>Tonton Video</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO EDITING PROJECT 4: SUN ANIMATION -->
+                <div class="project-card video-card" data-category="project" data-sub="video" data-animate="fade-up" data-delay="400"
+                    data-video="assets/Project/Video Editor/sun animation.mp4"
+                    data-title="Sun & Scenery Motion Animation"
+                    data-category-label="2D MOTION GRAPHIC"
+                    data-desc="Animasi motion graphic 2D pemandangan lanskap danau saat siklus matahari terbit dan terbenam. Memadukan ilustrasi vektor kosmik, pergeseran gradien warna langit senja yang lembut, animasi awan dinamis, serta refleksi air yang menawan."
+                    data-tools="After Effects,Illustrator,2D Animation,Motion Design"
+                    data-poster="assets/images/thumb-sun-animation.jpg">
+                    <div class="project-preview video-preview">
+                        <img src="assets/images/thumb-sun-animation.jpg" alt="Sun & Scenery Motion Animation" loading="lazy">
+                        <div class="video-badge-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>MOTION 2D</span>
+                        </div>
+                        <div class="video-play-center-btn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category video-cat-text">MOTION GRAPHIC &bull; VIDEO EDITING</span>
+                        <h3 class="project-title">Sun & Scenery Animation</h3>
+                        <p class="project-desc">Animasi motion graphic 2D pemandangan danau saat matahari terbit dan terbenam dengan gradasi langit kosmik yang memukau.</p>
+                        <div class="video-card-footer">
+                            <div class="project-tools">
+                                <span>After Effects</span>
+                                <span>Illustrator</span>
+                                <span>Motion Design</span>
+                            </div>
+                            <button class="video-inline-btn btn-open-video"
+                                data-video="assets/Project/Video Editor/sun animation.mp4"
+                                data-title="Sun & Scenery Motion Animation"
+                                data-category-label="2D MOTION GRAPHIC"
+                                data-desc="Animasi motion graphic 2D pemandangan lanskap danau saat siklus matahari terbit dan terbenam. Memadukan ilustrasi vektor kosmik, pergeseran gradien warna langit senja yang lembut, animasi awan dinamis, serta refleksi air yang menawan."
+                                data-tools="After Effects,Illustrator,2D Animation,Motion Design"
+                                data-poster="assets/images/thumb-sun-animation.jpg">
+                                <span>Tonton Video</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SERTIFIKAT CARDS ===== -->
+                <!-- Sertifikat 1: BNSP Desain Grafis -->
+                <div class="project-card cert-card" data-category="certificate" data-animate="fade-up" data-delay="100">
+                    <div class="project-preview cert-preview cert-preview-pdf">
+                        <div class="cert-pdf-frame-wrap">
+                            <iframe
+                                class="cert-pdf-frame"
+                                src="assets/certificates/bnsp desain grafis.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                title="Preview BNSP Desain Grafis"
+                                loading="lazy"
+                                tabindex="-1">
+                            </iframe>
+                        </div>
+                        <div class="cert-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            <span>SERTIFIKAT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/certificates/bnsp desain grafis.pdf"
+                                data-title="BNSP Desain Grafis"
+                                data-issuer="BNSP">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category cert-badge-text">SERTIFIKAT</span>
+                        <h3 class="project-title">BNSP Desain Grafis</h3>
+                        <p class="project-desc">Sertifikasi kompetensi nasional bidang desain grafis.</p>
+                        <div class="cert-card-footer">
+                            <div class="project-tools">
+                                <span>BNSP</span>
+                                <span>Design</span>
+                            </div>
+                            <button class="cert-inline-btn btn-open-pdf"
+                                data-pdf="assets/certificates/bnsp desain grafis.pdf"
+                                data-title="BNSP Desain Grafis"
+                                data-issuer="BNSP">
+                                <span>Buka PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 2: Peserta Terbaik PPKD -->
+                <div class="project-card cert-card" data-category="certificate" data-animate="fade-up" data-delay="200">
+                    <div class="project-preview cert-preview cert-preview-pdf">
+                        <div class="cert-pdf-frame-wrap">
+                            <iframe
+                                class="cert-pdf-frame"
+                                src="assets/certificates/Sertifikat peserta terbaik ppkd.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                title="Preview Peserta Terbaik PPKD"
+                                loading="lazy"
+                                tabindex="-1">
+                            </iframe>
+                        </div>
+                        <div class="cert-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            <span>SERTIFIKAT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat peserta terbaik ppkd.pdf"
+                                data-title="Peserta Terbaik PPKD"
+                                data-issuer="PPKD">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category cert-badge-text">SERTIFIKAT</span>
+                        <h3 class="project-title">Peserta Terbaik PPKD</h3>
+                        <p class="project-desc">Sertifikat penghargaan peserta terbaik pelatihan PPKD program DKV.</p>
+                        <div class="cert-card-footer">
+                            <div class="project-tools">
+                                <span>PPKD</span>
+                                <span>Achievement</span>
+                            </div>
+                            <button class="cert-inline-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat peserta terbaik ppkd.pdf"
+                                data-title="Peserta Terbaik PPKD"
+                                data-issuer="PPKD">
+                                <span>Buka PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 3: UKBI -->
+                <div class="project-card cert-card" data-category="certificate" data-animate="fade-up" data-delay="300">
+                    <div class="project-preview cert-preview cert-preview-pdf">
+                        <div class="cert-pdf-frame-wrap">
+                            <iframe
+                                class="cert-pdf-frame"
+                                src="assets/certificates/Sertifikat UKBI.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                title="Preview Sertifikat UKBI"
+                                loading="lazy"
+                                tabindex="-1">
+                            </iframe>
+                        </div>
+                        <div class="cert-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            <span>SERTIFIKAT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat UKBI.pdf"
+                                data-title="Sertifikat UKBI"
+                                data-issuer="Badan Bahasa">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category cert-badge-text">SERTIFIKAT</span>
+                        <h3 class="project-title">Sertifikat UKBI</h3>
+                        <p class="project-desc">Uji Kemahiran Berbahasa Indonesia — sertifikat resmi dari Badan Bahasa.</p>
+                        <div class="cert-card-footer">
+                            <div class="project-tools">
+                                <span>UKBI</span>
+                                <span>Bahasa</span>
+                            </div>
+                            <button class="cert-inline-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat UKBI.pdf"
+                                data-title="Sertifikat UKBI"
+                                data-issuer="Badan Bahasa">
+                                <span>Buka PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 4: Sertifikat Pelatihan DKV -->
+                <div class="project-card cert-card" data-category="certificate" data-animate="fade-up" data-delay="300">
+                    <div class="project-preview cert-preview cert-preview-pdf">
+                        <div class="cert-pdf-frame-wrap">
+                            <iframe
+                                class="cert-pdf-frame"
+                                src="assets/certificates/Sertifikat Pelatihan DKV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                title="Preview Sertifikat Pelatihan DKV"
+                                loading="lazy"
+                                tabindex="-1">
+                            </iframe>
+                        </div>
+                        <div class="cert-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            <span>SERTIFIKAT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat Pelatihan DKV.pdf"
+                                data-title="Sertifikat Pelatihan DKV"
+                                data-issuer="PPKD Jakarta Timur">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category cert-badge-text">SERTIFIKAT</span>
+                        <h3 class="project-title">Sertifikat Pelatihan DKV</h3>
+                        <p class="project-desc">Sertifikat pelatihan dari PPKD Jakarta Timur Program DKV untuk Design Grafis</p>
+                        <div class="cert-card-footer">
+                            <div class="project-tools">
+                                <span>DKV</span>
+                                <span>Desain</span>
+                            </div>
+                            <button class="cert-inline-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat Pelatihan DKV.pdf"
+                                data-title="Sertifikat Pelatihan DKV"
+                                data-issuer="PPKD Jakarta Timur">
+                                <span>Buka PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 5: Sertifikat Pelatihan Video Editor  -->
+                <div class="project-card cert-card" data-category="certificate" data-animate="fade-up" data-delay="300">
+                    <div class="project-preview cert-preview cert-preview-pdf">
+                        <div class="cert-pdf-frame-wrap">
+                            <iframe
+                                class="cert-pdf-frame"
+                                src="assets/certificates/Sertifikat Pelatian Video Editing.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                                title="Preview Sertifikat Pelatihan DKV (video-editor)"
+                                loading="lazy"
+                                tabindex="-1">
+                            </iframe>
+                        </div>
+                        <div class="cert-ribbon">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            <span>SERTIFIKAT</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-view-btn magnetic-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat Pelatihan Video Editing.pdf"
+                                data-title="Sertifikat Pelatihan DKV (video-editor)"
+                                data-issuer="PPKD Jakarta Timur">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                <span>Lihat PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category cert-badge-text">SERTIFIKAT</span>
+                        <h3 class="project-title">Sertifikat Pelatihan DKV</h3>
+                        <p class="project-desc">Sertifikat pelatihan dari PPKD Jakarta Timur Program DKV untuk Video Editing</p>
+                        <div class="cert-card-footer">
+                            <div class="project-tools">
+                                <span>DKV</span>
+                                <span>Video Editing</span>
+                            </div>
+                            <button class="cert-inline-btn btn-open-pdf"
+                                data-pdf="assets/certificates/Sertifikat Pelatian Video Editing.pdf"
+                                data-title="Sertifikat Pelatihan DKV (video-editor)"
+                                data-issuer="PPKD Jakarta Timur">
+                                <span>Buka PDF</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="contact-bg">
+            <div class="contact-planet"></div>
+            <div class="contact-orbital contact-orbital-1"></div>
+            <div class="contact-orbital contact-orbital-2"></div>
+            <div class="contact-glow"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">03 — CONNECT</span>
+                <h2 class="section-title contact-title">LET'S CREATE<br>SOMETHING TOGETHER.</h2>
+                <p class="section-subtitle">Have a project, idea, or opportunity? Let's connect.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-wrapper" data-animate="fade-right">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your name" required
+                                autocomplete="name">
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required
+                                autocomplete="email">
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" placeholder="Tell me about your project..."
+                                rows="5" required></textarea>
+                            <div class="input-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic-btn" id="btn-send">
+                            <span>SEND MESSAGE</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info" data-animate="fade-left">
+                    <div class="contact-card">
+                        <h3>Let's Work Together</h3>
+                        <p>I'm currently available for freelance work and exciting projects. If you have a vision, I'd
+                            love to help bring it to life.</p>
+
+                        <a href="#contact" class="btn btn-primary magnetic-btn contact-hire-btn">
+                            <span>HIRE ME</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="contact-socials">
+                        <h4>Find me online</h4>
+                        <div class="social-links-contact">
+                            <a href="https://www.instagram.com/zhstrfas?srtk=dGxwZ2pxOXJldXMx" target="_blank" rel="noopener noreferrer"
+                                class="social-link-contact">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zahrah-setia-rafaeyfa-assyla-5a05002b6/?isSelfProfile=true&locale=en" target="_blank" rel="noopener noreferrer"
+                                class="social-link-contact">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/AraKratau?tab=repositories" target="_blank" rel="noopener noreferrer"
+                                class="social-link-contact">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="footer-name">Zahrah Setia Rafaeyfa Assyla</p>
+                    <p class="footer-tagline">Creative &bull; Designer &bull; Developer</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/zhstrfas?srtk=dGxwZ2pxOXJldXMx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zahrah-setia-rafaeyfa-assyla-5a05002b6/?isSelfProfile=true&locale=en" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/AraKratau?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-copy">&copy; 2026 Zahrah Setia Rafaeyfa Assyla</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== VIDEO VIEWER MODAL ===== -->
+    <div class="video-modal" id="video-modal" aria-hidden="true">
+        <div class="video-modal-backdrop" id="video-modal-backdrop"></div>
+        <div class="video-modal-container">
+            <div class="video-modal-header">
+                <div class="video-modal-title-box">
+                    <div class="video-modal-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                    </div>
+                    <div class="video-modal-title-text">
+                        <span class="video-modal-badge" id="video-modal-category">Video Editing</span>
+                        <h3 class="video-modal-title" id="video-modal-title">Judul Video</h3>
+                    </div>
+                </div>
+                <div class="video-modal-actions">
+                    <a href="#" id="video-modal-download" class="video-action-btn" download>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        <span>Unduh Video</span>
+                    </a>
+                    <button class="video-modal-close" id="video-modal-close" aria-label="Tutup video modal">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="video-modal-body">
+                <div class="video-player-container">
+                    <video id="portfolio-video-player" controls preload="metadata" playsinline>
+                        Browser Anda tidak mendukung pemutar video HTML5.
+                    </video>
+                </div>
+                <div class="video-modal-details">
+                    <div class="video-details-header">
+                        <h4 class="video-details-heading">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                            </svg>
+                            <span>Tentang Proyek Video Ini</span>
+                        </h4>
+                    </div>
+                    <p class="video-modal-desc" id="video-modal-desc"></p>
+                    <div class="video-modal-meta">
+                        <span class="video-meta-label">Software & Keahlian:</span>
+                        <div class="video-modal-tools" id="video-modal-tools"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== PDF VIEWER MODAL ===== -->
+    <div class="pdf-modal" id="pdf-modal" aria-hidden="true">
+        <div class="pdf-modal-backdrop" id="pdf-modal-backdrop"></div>
+        <div class="pdf-modal-container">
+            <div class="pdf-modal-header">
+                <div class="pdf-modal-title-box">
+                    <div class="pdf-modal-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="pdf-modal-title" id="pdf-modal-title">Sertifikat</h3>
+                        <span class="pdf-modal-issuer" id="pdf-modal-issuer">Penerbit</span>
+                    </div>
+                </div>
+                <div class="pdf-modal-actions">
+                    <a href="#" id="pdf-modal-newtab" class="pdf-action-btn" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        <span>Buka Tab</span>
+                    </a>
+                    <a href="#" id="pdf-modal-download" class="pdf-action-btn" download>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span>Unduh</span>
+                    </a>
+                    <button class="pdf-modal-close" id="pdf-modal-close">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pdf-modal-body">
+                <iframe id="pdf-viewer-frame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
